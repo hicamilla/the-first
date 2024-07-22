@@ -1,0 +1,168 @@
+@font-face {
+	font-family: "GeneralSans";
+	src: url("/fonts/GeneralSans-Variable.ttf");
+}
+:root {
+	--title-font: "Noto Serif Display", serif;
+	--body-font: "GeneralSans";
+}
+
+body {
+	margin: 0 auto;
+	max-width: 920px;
+}
+
+/*navegation bar*/
+.container-fluid {
+	margin: 4px;
+	align-content: space-between;
+}
+.navbar {
+	font-family: var(--body-font);
+	font-size: 14px;
+	margin: 0;
+	justify-content: space-evenly;
+}
+.navbar-brand {
+	font-weight: 500;
+	margin: 0;
+}
+
+.nav-item {
+	color: black;
+	cursor: pointer;
+}
+
+.nav-item a:visited {
+	color: black;
+}
+.nav-item a:hover {
+	color: orange;
+}
+.nav-logo {
+	height: 40px;
+	padding-right: 15px;
+}
+
+/*end navbar*/
+
+.hero {
+	text-align: center;
+	padding: 50px 20px 60px 20px;
+}
+.hero h1 {
+	font-family: var(--title-font);
+	font-size: 150px;
+	margin: 0;
+}
+
+.hero h5 {
+	font-size: var(--body-font);
+	font-size: 17px;
+	margin: 0;
+}
+
+/*oppening*/
+.row {
+	align-items: center;
+	gap: 100px;
+	padding: 50px 80px;
+	margin: 0px;
+}
+
+.col,
+.col-1 {
+	padding: 0;
+}
+.intro-title {
+	font-family: var(--title-font);
+	font-size: 40px;
+	font-weight: 500;
+}
+
+.intro-description {
+	font-family: var(--body-font);
+	font-size: 17px;
+}
+
+.grid-container-element {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	column-gap: 25px;
+	align-items: center;
+	padding: 40px 20px 40px 20px;
+	padding-top: 30;
+}
+.grid-child-element {
+	margin: 0;
+}
+
+.intro-title {
+	font-family: var(--title-font);
+	font-size: 60px;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.intro-present {
+	font-family: var(--body-font);
+	font-size: 16px;
+}
+
+footer .icons {
+	display: flex;
+	align-content: center;
+}
+footer ul {
+	list-style: none;
+ 
+}
+
+footer li {
+	padding-left: 10px;
+
+/*
+@media (max-width: 900px) {
+	.hero {
+		justify-content: center !important;
+		padding: 30px 20px 30px 20px;
+		margin: 0px;
+	}
+
+	.container-fluid {
+		flex-wrap: nowrap !important;
+	}
+
+	.navbar-brand {
+		font-size: 14px;
+	}
+
+	.nav-item {
+		font-size: 12px;
+	}
+
+	.nav-link {
+		padding: 5px;
+	}
+
+	.hero h1 {
+		font-size: 70px;
+		text-align: center;
+	}
+
+	.hero h5 {
+		font-size: 14px;
+		text-align: center;
+	}
+
+	.intro-title {
+		font-family: var(--title-font);
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	.intro-description {
+		font-family: var(--body-font);
+		font-size: 12px;
+	}
+}*/
